@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
 import { ThemeContext } from 'styled-components';
+// import endpoints from '../constants/endpoints'; // Diese Zeile auskommentiert
 import Header from './Header';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/education.css';
@@ -16,13 +17,13 @@ function Education(props) {
   const [mode, setMode] = useState('VERTICAL_ALTERNATING');
 
   useEffect(() => {
-    fetch('https://duk7292.github.io/dev_portfolio/profile/about.json', {
+    // Festkodierter Endpunkt, ersetzt 'endpoints.education'
+    fetch('https://duk7292.github.io/dev_portfolio/profile/education.json', {
       method: 'GET',
     })
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch((err) => err);
-   }, []);
 
     if (window?.innerWidth < 576) {
       setMode('VERTICAL');
