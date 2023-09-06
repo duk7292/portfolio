@@ -4,7 +4,6 @@ import { ThemeContext } from 'styled-components';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal/Fade';
 import Header from './Header';
-import endpoints from '../constants/endpoints';
 import ProjectCard from './projects/ProjectCard';
 import FallbackSpinner from './FallbackSpinner';
 
@@ -24,7 +23,7 @@ const Projects = (props) => {
   const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
-    fetch(endpoints.projects, {
+    fetch("http://api.example.com/projects", {  // URL direkt eingefügt
       method: 'GET',
     })
       .then((res) => res.json())
