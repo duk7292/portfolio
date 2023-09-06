@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { ThemeContext } from 'styled-components';
 import Fade from 'react-reveal';
 import Header from './Header';
-import endpoints from '../constants/endpoints';
+// import endpoints from '../constants/endpoints'; // Diese Zeile auskommentiert
 import FallbackSpinner from './FallbackSpinner';
 import '../css/experience.css';
 
@@ -36,7 +36,8 @@ function Experience(props) {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(endpoints.experiences, {
+    // Festkodierter Endpunkt, ersetzt 'endpoints.experiences'
+    fetch('https://duk7292.github.io/dev_portfolio/profile/experiences.json', {
       method: 'GET',
     })
       .then((res) => res.json())
@@ -47,7 +48,6 @@ function Experience(props) {
   return (
     <>
       <Header title={header} />
-
       {data
         ? (
           <div className="section-content-container">

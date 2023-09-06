@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 import Fade from 'react-reveal';
-import endpoints from '../constants/endpoints';
+// import endpoints from '../constants/endpoints'; // Diese Zeile auskommentiert
 import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
 
@@ -25,7 +25,8 @@ function Home() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(endpoints.home, {
+    // Festkodierter Endpunkt, ersetzt 'endpoints.home'
+    fetch('https://duk7292.github.io/dev_portfolio/profile/home.json', {
       method: 'GET',
     })
       .then((res) => res.json())
