@@ -3,7 +3,7 @@ import React, { useEffect, useState, useContext } from 'react';
 import { withRouter } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import styled, { ThemeContext } from 'styled-components';
-import endpoints from '../constants/endpoints';
+// import endpoints from '../constants/endpoints'; // Auskommentiert
 import ThemeToggler from './ThemeToggler';
 
 const styles = {
@@ -42,7 +42,8 @@ const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
-    fetch(endpoints.navbar, {
+    // Festkodierter Endpunkt, ersetzt 'endpoints.navbar'
+    fetch('https://duk7292.github.io/dev_portfolio/profile/navbar.json', {
       method: 'GET',
     })
       .then((res) => res.json())
