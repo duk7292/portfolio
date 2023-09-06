@@ -1,16 +1,12 @@
 {
     "social": [
         {
-            "network" : "linkedin",
-            "href": "https://linkedin.com/"
-        },
-        {
             "network" : "github",
-            "href": "https://github.com/mayankagarwal09"
+            "href": "https://github.com/duk7292"
         },
         {
             "network" : "email",
-            "href": "mailto:test@test.com"
+            "href": "mailto:nils_schmidt07@yahoo.com"
         }
     ]
 }
