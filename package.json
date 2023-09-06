@@ -37,7 +37,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://duk7292.github.io/dev_portfolio/",
+  "homepage": "https://duk7292.github.io/dev_portfolio/src/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
