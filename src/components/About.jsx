@@ -35,12 +35,12 @@ function About(props) {
   );
 
   useEffect(() => {
-    fetch(endpoints.about, {
+    fetch('https://duk7292.github.io/dev_portfolio/profile/about.json', {
       method: 'GET',
     })
-      .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((err) => err);
+    .then((res) => res.json())
+    .then((res) => setData(res))
+    .catch((err) => err);
   }, []);
 
   return (
