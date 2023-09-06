@@ -37,22 +37,26 @@
       "last 1 safari version"
     ]
   },
+  "homepage": "https://duk7292.github.io/dev_portfolio/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "react-error-overlay": "6.0.9",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.26.1",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^6.0.0",
+    "react-error-overlay": "6.0.9"
   },
   "resolutions": {
     "react-error-overlay": "6.0.9"
   }
-  }
+}
