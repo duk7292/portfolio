@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { ThemeContext } from 'styled-components';
-import endpoints from '../constants/endpoints';
 
 const styles = {
   iconStyle: {
@@ -16,7 +15,8 @@ function Social() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(endpoints.social, {
+    // Festkodierter Endpunkt, ersetzt 'endpoints.navbar'
+    fetch('https://duk7292.github.io/dev_portfolio/profile/social.json', {
       method: 'GET',
     })
       .then((res) => res.json())
