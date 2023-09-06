@@ -29,7 +29,8 @@ function Skills(props) {
   );
 
   useEffect(() => {
-    fetch(endpoints.skills, {
+   
+    fetch('https://duk7292.github.io/dev_portfolio/profile/skills.json', {
       method: 'GET',
     })
       .then((res) => res.json())
