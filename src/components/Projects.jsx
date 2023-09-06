@@ -23,7 +23,8 @@ const Projects = (props) => {
   const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
-    fetch("http://api.example.com/projects", {  // URL direkt eingefügt
+    // Festkodierter Endpunkt, ersetzt 'endpoints.navbar'
+    fetch('https://duk7292.github.io/dev_portfolio/profile/projects.json', {
       method: 'GET',
     })
       .then((res) => res.json())
