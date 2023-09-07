@@ -5,16 +5,16 @@
             "title": "Languages",
             "items" : [
                 {
-                    "icon": "dev_portfolio/images/skills/python.png",
+                    "icon": "images/skills/python.png",
                     "title": "Python"
                 },
                 {
-                    "icon": "dev_portfolio/images/skills/java.png",
+                    "icon": "images/skills/java.png",
                     "title": "Java"
                 },
             
                 {
-                    "icon": "dev_portfolio/images/skills/js.png",
+                    "icon": "images/skills/js.png",
                     "title": "JavaScript"
                 }
                 

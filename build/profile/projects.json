@@ -1,7 +1,7 @@
 {
     "projects" : [
         {
-            "image" : "dev_portfolio/images/projects/Sample-images-from-A-Z-handwritten-capital-letters-dataset-To-train-our-CNN-model-to.png",
+            "image" : "images/projects/Sample-images-from-A-Z-handwritten-capital-letters-dataset-To-train-our-CNN-model-to.png",
             "title": "CNN From Scratch",
             "bodyText": "This project is a Convolutional Neural Network (CNN) built from scratch using only the NumPy, SciPy, and CuPy libraries.",
             "links": [
@@ -19,7 +19,7 @@
             ]
         },
         {
-            "image" : "dev_portfolio/images/projects/20230906_170256.jpg",
+            "image" : "images/projects/20230906_170256.jpg",
             "title": "Cat image generator",
             "bodyText": "I am currently engaged in a project where I will be utilizing TensorFlow to develop an AI system for image generation",
             
