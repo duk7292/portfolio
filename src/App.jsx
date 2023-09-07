@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { HashRouter } from 'react-router-dom';  // Änderung hier: HashRouter statt BrowserRouter
+import { HashRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import useDarkMode from 'use-dark-mode';
 import AppContext from './AppContext';
@@ -18,7 +18,8 @@ function App() {
       <ThemeProvider theme={darkMode.value ? darkTheme : lightTheme}>
         <GlobalStyles />
         <div className="App">
-          <HashRouter>  {/* Änderung hier: HashRouter statt BrowserRouter */}
+          <HashRouter>
+            {}
             <MainApp />
           </HashRouter>
         </div>
