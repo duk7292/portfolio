@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="generell_settings.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="about_me.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="projekte.css">
+</head>
+<body>
+    <header>
+        <div class="header_text"></div>
+        <nav>
+            <input type="checkbox" id="toggle_button">
+            <label for="toggle_button">
+                <span class="material-symbols-outlined">menu</span>
+            </label>
+            <ul>
+                <li><a href="#about_me_section">Über mich</a></li> 
+                <li><a href="#project_section">Projekte</a></li> 
+                <li><a href="#more_information_section">Mehr Informationen</a></li> 
+            </ul>
+            <h1>Nils Schmidt, <br><span style="color: var(--main-brand-color);">I'm a self taught coder</span></h1>
+            <p class="subheading">I'm 16, have been coding for 3 years, exploring AI mainly using Python.</p>
+            <p class="subheading">Seeking a one-year internship to learn more about the tech industry.</p>
+        </nav>
+        <div class="circle">
+            <img src="images/2ce1f9ef-0d7f-4207-8065-ebd8a1c7ce84.jfif" alt="">
+        </div>
+    </header>
+    <section id="about_me_section">
+        <img src="images/IMG-20231023-WA0004.jpg" alt="">
+        <div class="about_me_container">
+            <h2>about me</h2>
+            <p>I'm 16 and have been coding for about three years. Lately, I've been exploring Artificial Intelligence, but I'm still trying to find a specific area that I want to focus on.</p>
+
+            <p>I mostly use Python, especially when working with AI tools like TensorFlow. I also know some C++, Java, and JavaScript, but Python is where I'm most comfortable.</p>
+
+            <p>I started coding out of curiosity and found it interesting how we can communicate with computers using code. I've done some projects on my own and a few with friends.</p>
+
+            <p>Right now, I'm looking for a one-year internship to get a feel for the tech industry and continue improving my skills. I enjoy coding, and I'm keen on learning more.</p>
+
+        </div>
+
+    </section>
+    <section id="project_section">
+        <h2>Projekte</h2>
+        <div class="flex_container">
+            <div class="card">
+                <h3>CNN From Scratch</h3>
+                <p>This project is a Convolutional Neural Network (CNN) built from scratch using only the NumPy, SciPy, and CuPy libraries.</p>
+                <a href="https://github.com/duk7292/CnnCharacterRecognition">Ansehen</a>
+            </div>
+            <div class="card">
+                <h3>Cat image generator</h3>
+                <p>I am currently engaged in a project where I will be utilizing TensorFlow to develop an AI system for image generation.</p>
+                <a href="https://github.com/duk7292/ImageGenerator">Ansehen</a>
+            </div>
+            
+        </div>
+    </section>
+    <footer id="more_information_section">
+        <h2>Mehr Informationen</h2>
+        <div class="grid_container">
+            <div id="item1" class="grid_item">
+                <img src="images/GitHub.png" alt="">
+                
+                    <h3><a href="https://github.com/duk7292">GitHub</a></h3>
+                
+            </div>
+            <div id="item2" class="grid_item">
+                <img src="images/LinkedIn.png" alt="">
+                
+                    <h3><a href="https://www.linkedin.com/in/nils-schmidt-87ba52297/">LinkedIn</a></h3>
+
+            </div>
+            <div id="item3" class="grid_item">
+                <img src="images/665072.png" alt="">
+                <h3>Kontakt</h3>
+                <p>E-mail: <a href="mailto:nils_schmdidt07@yahoo.com">nils_schmdidt07@yahoo.com</a><br></p>     
+            </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
