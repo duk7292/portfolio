@@ -6,6 +6,11 @@ footer h2{
     font-size: 50px;
     text-align: center;
 }
+footer a{
+    color: var(--text-color);
+    text-decoration: none;
+
+}
 .grid_container{
     
     width: 1500px;
